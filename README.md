@@ -92,6 +92,8 @@ try {
 
 #### Global Defaults
 
+- it is a set of functionality that will be added every time you make a request with axios
+
 ```js
 axios.defaults.headers.common['Accept'] = 'application/json';
 axios.defaults.baseURL = 'https://api.example.com';
