@@ -93,6 +93,7 @@ try {
 #### Global Defaults
 
 - it is a set of functionality that will be added every time you make a request with axios
+- it have a down side: this functionality will affect every request in this app so whenever we make token like request its also get this functionalities
 
 ```js
 axios.defaults.headers.common['Accept'] = 'application/json';
@@ -103,6 +104,8 @@ axios.defaults.headers.post['Content-Type'] =
 ```
 
 #### Custom Instance
+
+- same like global defaults but it will affect only the instance that we create, we can use them with importing the instance
 
 ```js
 const authFetch = axios.create({
